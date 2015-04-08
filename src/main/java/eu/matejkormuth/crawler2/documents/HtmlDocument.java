@@ -42,6 +42,12 @@ public class HtmlDocument extends Document {
         }
     }
 
+    public HtmlDocument(String contentType, String contentEncoding,
+            byte[] content) {
+        super(contentEncoding);
+        this.content = content;
+    }
+
     @Override
     public byte[] getContent() {
         return this.content;

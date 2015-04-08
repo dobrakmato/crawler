@@ -53,7 +53,7 @@ public class UrlStack implements Stack<URL> {
     }
 
     public URL pop() {
-        return this.stack[this.top--];
+        return this.stack[--this.top];
     }
 
     public URL[] exposeBackingArray() {
